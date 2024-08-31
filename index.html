@@ -7,7 +7,14 @@
     <meta name="author" content="Yoandy Doble Herrera" />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+family=Poppins+family=Lato+family=Anton&display=swap" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-z3gLpdD1e1rN9cQ2dTAIyeu+agqFRm+8M6RAStbhM2W1lRW4e66/Uh7JB/9o16Y9CUGB0uNZ3GPX/e/B7E6/..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" type="image/png" href="assets/images/codebydoble_logo.jpg" sizes="64x64" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Portfolio - Codebydoble</title>
@@ -166,11 +173,34 @@
       </section>
       <section id="work-services">
         <h2 class="second-title">Work Services</h2>
-        <article class="work-experience"></article>
-        <article class="work-experience"></article>
-        <article class="work-experience"></article>
+        <article class="work-experience">
+          <i class="fa-solid fa-code"></i>
+          <h3>WEB DESIGN</h3>
+          <p>Responsive web design with HTML5 CSS3 JS</p>
+        </article>
+        <article class="work-experience">
+          <i class="fa-solid fa-desktop"></i>
+          <h3>WEB APPS</h3>
+          <p>Boost web design with Vanilla JS and React.js</p>
+        </article>
       </section>
-      <section id="hire-me"></section>
+      <section id="hire-me">
+        <form action="" method="post">
+          <div class="container">
+            <label for="name-contact">Name</label>
+            <input type="text" id="name-contact" name="name-contact" required />
+            <label for="email-contact">Email</label>
+            <input type="email" id="email-contact" name="email-contact" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required />
+            <label for="subject-contact">Subject</label>
+            <input type="text" id="subject-contact" name="subject-contact" required />
+            <label for="message-contact">Message</label>
+            <textarea id="message-contact" name="message-contact" required></textarea>
+          </div>
+          <div class="container-btn">
+            <button type="submit">Contact</button>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
