@@ -2,3 +2,34 @@
 Author: Yoandy Doble Herrera
 Date: 09/08/2024
 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  height: auto;
+  max-width: 100%;
+}
