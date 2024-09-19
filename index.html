@@ -22,7 +22,15 @@
   <body>
     <header>
       <div class="container">
-        <p class="textBig"><strong>Codeby</strong>doble</p>
+        <div class="container-element">
+          <i class="fa-solid fa-meteor"></i>
+          <p class="textBig"><strong>Codeby</strong>doble</p>
+          <button class="btn-dropdown">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </div>
         <nav class="navBarHeader">
           <ul class="navList">
             <li><a href="" class="linkNav">Home</a></li>
@@ -132,81 +140,87 @@
               <button class="bnt-fork" id="btnPenguin" name="btnPenguin"><img class="img-btn" alt="Git icon" title="Git" src="assets/images/git-icon.png" /> Fork me</button>
             </form>
           </article>
+          <form action="" method="post">
+            <button class="bnt-fork" id="btnProjects" name="btnProjects">Show All</button>
+          </form>
         </div>
-        <form action="" method="post">
-          <button class="bnt-fork" id="btnProjects" name="btnProjects">Show All</button>
-        </form>
       </section>
       <section id="skills">
-        <h2 class="second-title">Skills</h2>
         <div class="container">
-          <p class="textEdit">Front-end</p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          <h2 class="second-title">Skills</h2>
+          <div class="container">
+            <p class="textEdit">Front-end</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <p class="textEdit">Development</p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="container">
+            <p class="textEdit">Development</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <p class="textEdit">IT Support</p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="container">
+            <p class="textEdit">IT Support</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <p class="textEdit">Backend Development</p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="container">
+            <p class="textEdit">Backend Development</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <p class="textEdit">QA Testing</p>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="container">
+            <p class="textEdit">QA Testing</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
         </div>
       </section>
       <section id="work-services">
-        <h2 class="second-title">Work Services</h2>
-        <article class="work-experience">
-          <i class="fa-solid fa-code"></i>
-          <h3>WEB DESIGN</h3>
-          <p>Responsive web design with HTML5 CSS3 JS</p>
-        </article>
-        <article class="work-experience">
-          <i class="fa-solid fa-desktop"></i>
-          <h3>WEB APPS</h3>
-          <p>Boost web design with Vanilla JS and React.js</p>
-        </article>
+        <div class="container">
+          <h2 class="second-title">Work Services</h2>
+          <article class="work-experience">
+            <i class="fa-solid fa-code"></i>
+            <h3>WEB DESIGN</h3>
+            <p>Responsive web design with HTML5 CSS3 JS</p>
+          </article>
+          <article class="work-experience">
+            <i class="fa-solid fa-desktop"></i>
+            <h3>WEB APPS</h3>
+            <p>Boost web design with Vanilla JS and React.js</p>
+          </article>
+        </div>
       </section>
       <section id="hire-me">
-        <form action="" method="post">
-          <div class="container">
-            <label for="name-contact">Name</label>
-            <input type="text" id="name-contact" name="name-contact" required />
-            <label for="email-contact">Email</label>
-            <input type="email" id="email-contact" name="email-contact" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required />
-            <label for="subject-contact">Subject</label>
-            <input type="text" id="subject-contact" name="subject-contact" required />
-            <label for="message-contact">Message</label>
-            <textarea id="message-contact" name="message-contact" required></textarea>
-          </div>
-          <div class="container-btn">
-            <button type="submit">Contact</button>
-          </div>
-        </form>
-        <div class="container-info">
-          <div>
-            <i class="fa-solid fa-map-location-dot"></i>
-            <p>Matanzas, Cuba</p>
-          </div>
-          <div>
-            <i class="fa-regular fa-envelope"></i>
-            <p>yoandy.doble@gmail.com</p>
+        <div class="container">
+          <form action="" method="post">
+            <div class="container">
+              <label for="name-contact">Name</label>
+              <input type="text" id="name-contact" name="name-contact" required />
+              <label for="email-contact">Email</label>
+              <input type="email" id="email-contact" name="email-contact" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required />
+              <label for="subject-contact">Subject</label>
+              <input type="text" id="subject-contact" name="subject-contact" required />
+              <label for="message-contact">Message</label>
+              <textarea id="message-contact" name="message-contact" required></textarea>
+            </div>
+            <div class="container-btn">
+              <button type="submit">Contact</button>
+            </div>
+          </form>
+          <div class="container-info">
+            <div>
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p>Matanzas, Cuba</p>
+            </div>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>yoandy.doble@gmail.com</p>
+            </div>
           </div>
         </div>
       </section>
