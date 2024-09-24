@@ -15,13 +15,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-z3gLpdD1e1rN9cQ2dTAIyeu+agqFRm+8M6RAStbhM2W1lRW4e66/Uh7JB/9o16Y9CUGB0uNZ3GPX/e/B7E6/..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="icon" type="image/png" href="assets/images/codebydoble_logo.jpg" sizes="64x64" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Portfolio - Codebydoble</title>
@@ -64,32 +57,37 @@
       };
     </script>
     <main>
-      <section id="mainSection">
+      <section id="mainSection" class="container container-flex">
         <div class="container">
-          <div class="container-s1">
-            <h1 class="main-title">Hello, my name is</h1>
-            <p class="param-name param-edit">Yoandy Doble</p>
-            <p>Front-end developer HTML5 | CSS3 | JS</p>
-            <div class="linkContainer">
-              <a rel="noopener noreferer" target="_blank" href="https://x.com/YoandyDoble" class="link-social"
-                ><img class="img-social" src="assets/images/X_light.svg" alt="X icon" title="Codebydoble's X profile"
-              /></a>
-              <a rel="noopener noreferer" target="_blank" href="https://github.com/DobleDJ" class="link-social"
-                ><img class="img-social" src="assets/images/Github_light.svg" alt="Github icon" title="Codebydoble's github profile"
-              /></a>
+          <div class="container-hero">
+            <div class="hero">
+              <h1 class="main-title">Hello, my name is</h1>
+              <p class="param-name param-edit">Yoandy Doble</p>
+              <p>Front-end developer HTML5 | CSS3 | JS</p>
+              <img class="profile-mobile" src="assets/images/profile.png" alt="X icon" title="Codebydoble's profile" />
+            </div>
+            <div class="link-container">
+              <a title="Codebydoble's X profile" rel="noopener noreferer" target="_blank" href="https://x.com/YoandyDoble" class="link-social"
+                ><i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a title="Codebydoble's github profile" rel="noopener noreferer" target="_blank" href="https://github.com/DobleDJ" class="link-social"
+                ><i class="fa-brands fa-github"></i>
+              </a>
               <a rel="noopener noreferer" target="_blank" href="mailto:yoandy.doble@gmail.com" class="link-social"
                 ><img class="img-social" src="assets/images/gmail.svg" alt="Gmail icon" title="Contact Yoandy Doble"
               /></a>
-              <a rel="noopener noreferer" target="_blank" href="assets/resources/CV en blanco.pdf" class="link-social" download="CV_Yoandy_Doble.pdf">CV</a>
+              <a rel="noopener noreferer" target="_blank" href="assets/resources/CV en blanco.pdf" class="link-social" download="CV_Yoandy_Doble.pdf"
+                ><i class="fa-solid fa-file-pdf"></i
+              ></a>
             </div>
-            <div class="linkContainer">
-              <a rel="noopener noreferer" target="_blank" href="" class="link-social">Projects</a>
-              <a rel="noopener noreferer" target="_blank" href="mailto:yoandy.doble@gmail.com" class="link-social">Contact</a>
+            <div class="link-container">
+              <a rel="noopener noreferer" target="_blank" href="" class="link-social link-social-btn">Projects</a>
+              <a rel="noopener noreferer" target="_blank" href="mailto:yoandy.doble@gmail.com" class="link-social link-social-btn">Contact</a>
             </div>
           </div>
-          <div class="img-profile">Aqui va una foto en background</div>
+          <div class="profile-photo">Aqui va una foto en background</div>
         </div>
-        <p class="param-edit">BUILDING SOFTWARE WITH <img class="img-icon" alt="A love icon" title="Love" src="assets/images/love-icon.png" /> FROM CUBA TO THE WORLD</p>
+        <p class="param-edit">BUILDING SOFTWARE WITH <i class="fa-solid fa-heart"></i> FROM CUBA TO THE WORLD</p>
       </section>
       <section id="projects">
         <p class="param-edit">Codebydoble's Portfolio - freeCodeCamp Projects</p>
