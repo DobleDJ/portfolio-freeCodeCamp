@@ -11,6 +11,13 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-z3gLpdD1e1rN9cQ2dTAIyeu+agqFRm+8M6RAStbhM2W1lRW4e66/Uh7JB/9o16Y9CUGB0uNZ3GPX/e/B7E6/..."
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
@@ -21,28 +28,41 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="container-element">
-          <i class="fa-solid fa-meteor"></i>
-          <p class="textBig"><strong>Codeby</strong>doble</p>
-          <button class="btn-dropdown">
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
+      <nav class="navbar-header">
+        <i class="fa-solid fa-meteor"></i>
+        <p class="text-big"><strong>Codeby</strong>doble</p>
+        <ul class="nav-list">
+          <li><a href="" class="linkNav">Home</a></li>
+          <li><a href="#mainSection" class="linkNav">About</a></li>
+          <li><a href="#projects" class="linkNav">Projects</a></li>
+          <li><a href="#skills" class="linkNav">Skills</a></li>
+          <li><a href="#work-services" class="linkNav">Work</a></li>
+          <li><a href="#hire-me" class="linkNav">Contact</a></li>
+        </ul>
+        <div class="btn-toogle">
+          <i class="fa-solid fa-bars"></i>
         </div>
-        <nav class="navBarHeader">
-          <ul class="navList">
-            <li><a href="" class="linkNav">Home</a></li>
-            <li><a href="#mainSection" class="linkNav">About</a></li>
-            <li><a href="#projects" class="linkNav">Projects</a></li>
-            <li><a href="#skills" class="linkNav">Skills</a></li>
-            <li><a href="#work-services" class="linkNav">Work</a></li>
-            <li><a href="#hire-me" class="linkNav">Contact</a></li>
-          </ul>
-        </nav>
+      </nav>
+      <div class="dropdown-menu">
+        <li><a href="" class="linkNav">Home</a></li>
+        <li><a href="#mainSection" class="linkNav">About</a></li>
+        <li><a href="#projects" class="linkNav">Projects</a></li>
+        <li><a href="#skills" class="linkNav">Skills</a></li>
+        <li><a href="#work-services" class="linkNav">Work</a></li>
+        <li><a href="#hire-me" class="linkNav">Contact</a></li>
       </div>
     </header>
+    <script>
+      const btnToogle = document.querySelector(".btn-toogle");
+      const btnToogleIcon = document.querySelector(".btn-toogle i");
+      const dropDownMenu = document.querySelector(".dropdown-menu");
+
+      btnToogle.onclick = function () {
+        const isOpen = dropDownMenu.classList.contains("open");
+        dropDownMenu.classList.toggle("open");
+        btnToogleIcon.classList = isOpen ? "fa-solid fa-bars" : "fa-solid fa-xmark";
+      };
+    </script>
     <main>
       <section id="mainSection">
         <div class="container">
