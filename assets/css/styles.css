@@ -6,6 +6,7 @@ Date: 09/08/2024
   --black-primary: #000;
   --green-palette: #107f85;
   --bgcolor: #0d1117;
+  --bgwhite: #ffffff;
 }
 
 /*RESET 2024*/
@@ -93,7 +94,8 @@ button {
 }
 
 button:hover {
-  background-color: grey;
+  background-color: var(--green-palette);
+  color: var(--bgwhite);
 }
 
 /*Global*/
@@ -252,11 +254,63 @@ main {
 
 .param-edit {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px;
+}
+
+.param-edit > i {
+  font-size: 1.25rem;
 }
 
 .profile-photo {
   display: none;
+}
+
+/*Project Section*/
+.container-project {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80dvw;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.art-info {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  gap: 1rem;
+  text-align: center;
+  background-color: var(--green-palette);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--bgwhite);
+}
+
+.art-info .img-article {
+  border-radius: 10px;
+  height: 300px;
+  width: auto;
+}
+
+.art-info > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.link-social-git {
+  font-weight: bold;
+}
+
+.link-social-git:hover {
+  color: var(--bgwhite);
+}
+
+.btn-fork {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 footer {
