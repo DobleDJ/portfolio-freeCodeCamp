@@ -364,6 +364,17 @@ main {
   transition: width 0.6s ease;
 }
 
+/*Work Services*/
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-services {
+  gap: 1rem;
+  padding-bottom: 20px;
+}
+
 footer {
   position: relative;
   bottom: 0;
