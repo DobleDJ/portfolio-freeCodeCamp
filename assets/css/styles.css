@@ -195,7 +195,7 @@ a:hover {
 }
 
 .dropdown-menu.open {
-  height: 28dvh;
+  height: 40dvh;
 }
 
 /*Main section*/
@@ -208,6 +208,32 @@ main {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+.container-flex-form {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.75rem;
+  width: 60dvw;
+  margin: auto;
+}
+
+.container-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.divider-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.divider-form input {
+  width: 177px;
 }
 
 .hero {
@@ -375,6 +401,20 @@ main {
   padding-bottom: 20px;
 }
 
+/*Location*/
+.container-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fa-heart {
+  font-size: 20px;
+}
+
 footer {
   position: relative;
   bottom: 0;
@@ -391,5 +431,73 @@ footer {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
     transition: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-menu.open {
+    height: 43dvh;
+  }
+
+  .container-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown-menu.open {
+    height: 32dvh;
+  }
+
+  .dropdown-menu.open {
+    height: 32dvh;
+  }
+
+  .nav-list {
+    display: contents;
+  }
+  .navbar-header .nav-list {
+    display: contents;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .navbar-header .btn-toogle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .dropdown-menu.open {
+    height: 32dvh;
+  }
+
+  .nav-list {
+    display: contents;
+  }
+  .navbar-header .nav-list {
+    display: contents;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .navbar-header .btn-toogle {
+    display: none;
+  }
+
+  .profile-photo {
+    display: contents;
+    width: 100px;
+    height: 100px;
   }
 }
